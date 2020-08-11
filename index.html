@@ -112,9 +112,9 @@
             <a href="#" class="primary-btn">Agende um horário</a>
         </div>
         <ul class="offcanvas__widget">
-            <li><i class="fa fa-phone"></i> (11) 7431-6721</li>
-            <li><i class="fa fa-map-marker"></i> Rua Senador Felinto Muller, 252 - Centro do Taboão da Serra.</li>
-            <li><i class="fa fa-envelope"></i> tresmarias@gmail.com</li>
+            <li><i class="fa fa-phone"></i><a href="tel:11974316721" target="_blank">(11) 97431-6721</a> - Whatsapp</li>
+            <li><i class="fa fa-phone"></i><a href="tel:1147019146" target="_blank"> (11) 4701 9146</a> - Fixo</li>
+            <li><i class="fa fa-map-marker"></i><a class="map-link" href="https://maps.google.com/maps?q=06754-050/@-23.6069465,-46.7572924,17z"> Rua Senador Felinto Muller, 252 Rua Senador Felinto Muller, 252 - CEP: 06754050 - Centro do Taboão da Serra.</a></li>
         </ul>
         <div class="offcanvas__social">
             <a href="https://www.instagram.com/estetica.tresmarias/"><i class="fa fa-instagram"></i></a>
@@ -129,8 +129,9 @@
                 <div class="row">
                     <div class="col-lg-8">
                         <ul class="header__top__left">
-                            <li><i class="fa fa-phone"></i> 11 7431-6721</li>
-                            <li><i class="fa fa-map-marker"></i> Rua senador felinto muller, 252 - Centro do Taboão da Serra</li>
+                            <li><i class="fa fa-phone"></i><a href="tel:11974316721" target="_blank">(11) 97431-6721</a> - Whatsapp</li>
+                            <li><i class="fa fa-phone"></i><a href="tel:1147019146" target="_blank"> (11) 4701 9146</a> - Fixo</li>
+                            <li><i class="fa fa-map-marker"></i><a class="map-link" href="https://maps.google.com/maps?q=06754-050/@-23.6069465,-46.7572924,17z"> Rua Senador Felinto Muller, 252 Rua Senador Felinto Muller, 252 - CEP: 06754050 - Centro do Taboão da Serra.</a></li>
                             <li><i class="fa fa-clock-o"></i> Segunda à sexta-feira, das 9h até 18:00</li>
                         </ul>
                     </div>
@@ -186,7 +187,7 @@
                     <div class="hero__text">
                         <span>Skinbooster </span>
                         <h3>É um procedimento estético injetável simples que, por meio do ácido hialurônico, hidrata profundamente a pele.</h2>
-                        <a href="tel:1174316721" target="_blank" class="primary-btn normal-btn">Marque já</a>
+                        <a href="tel:11974316721" target="_blank" class="primary-btn normal-btn">Marque já</a>
                     </div>
                 </div>
             </div>
@@ -349,7 +350,7 @@
                         </div>
                         <div class="services__item__text">
                             <h5>Procedimentos faciais</h5>
-                            <p>Limpeza de pele, Peeling de diamante e/ou químico, Microagulhamento, Preenchimento, Hidratação e Botox.
+                            <p>Limpeza de pele, Peeling de diamante e/ou químico, Microagulhamento, Preenchimento, Hidratação e Toxina Botulínica.
                             </p>
                         </div>
                     </div>
@@ -557,10 +558,10 @@
                     <div class="footer__address">
                         <h5>Nossos Contatos</h5>
                         <ul>
-                            <li><i class="fa fa-phone"></i> (11) 7431-6721</li>
-                            <li><i class="fa fa-map-marker"></i> Rua Senador Felinto Muller, 252 - Centro do Taboão da Serra.</li>
-                            <li><i class="fa fa-envelope"></i> tresmarias@gmail.com</li>
-                        </ul>
+                            <li><i class="fa fa-phone"></i><a href="tel:11974316721" target="_blank">(11) 97431-6721</a> - Whatsapp</li>
+                            <li><i class="fa fa-phone"></i><a href="tel:1147019146" target="_blank"> (11) 4701 9146</a> - Fixo</li>
+                            <li><i class="fa fa-map-marker"></i><a class="map-link" href="https://maps.google.com/maps?q=06754-050/@-23.6069465,-46.7572924,17z"> Rua Senador Felinto Muller, 252 Rua Senador Felinto Muller, 252 - CEP: 06754050 - Centro do Taboão da Serra.</a></li>
+                            <li><i class="fa fa-clock-o"></i> Segunda à sexta-feira, das 9h até 18:00</li>                        </ul>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-12 col-sm-6">
@@ -610,6 +611,22 @@
     <script src="./js/jquery.slicknav.js"></script>
     <script src="./js/owl.carousel.min.js"></script>
     <script src="./js/main.js"></script>
+
+    <script>
+        $(document).on('click','.map-link',function() {
+        var address = $(this).html();
+        address = $('<div/>')
+        .html(address)
+        .text() // strip tags
+        .replace(/\s\s+/g, " "); // remove spaces
+        address = encodeURIComponent(address);
+        if ((navigator.platform.indexOf('iPhone') != -1) || (navigator.platform.indexOf('iPad') != -1) || (navigator.platform.indexOf('iPod') != -1)){/* if we're on iOS, open in Apple Maps */
+            window.open('http://maps.apple.com/?q=' + address);
+        } else { /* else use Google */
+            window.open('https://maps.google.com/maps?q=' + address);
+        }
+});
+    </script>
 </body>
 
 </html>
