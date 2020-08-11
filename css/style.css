@@ -33,6 +33,8 @@
 /*----------------------------------------*/
 .map-link { color:white;cursor: pointer ;}
 .map-link:hover { text-decoration-style:solid;}
+.tel-link { color:white;cursor: pointer ;}
+.tel-link:hover { text-decoration-style:solid;}
 html,
 body {
 	height: 100%;
