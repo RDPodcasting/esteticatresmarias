@@ -206,46 +206,46 @@
                             <h2>CONSULTA</h2>
                         </div>
                         <form action="#">
-                            <input type="text" placeholder="Nome">
-                            <input type="text" placeholder="Whatsapp">
+                            <input type="text" id="Nome" placeholder="Nome">
+                            <input type="text" id="Whatsapp" placeholder="Whatsapp">
                             <div class="datepicker__item">
-                                <input type="text" placeholder="Data" class="datepicker">
+                                <input type="text" id="DtAgenda" placeholder="Data" class="datepicker">
                                 <i class="fa fa-calendar"></i>
                             </div>
-                            <select>
+                            <select id="TipoServicos">
                                 <option value="">Tipo de serviço</option>
-                                <option value="">Limpeza de pele</option>
-                                <option value="">Peeling de diamante</option>
-                                <option value="">Peeling químico</option>
-                                <option value="">Microagulhamento facial</option>
-                                <option value="">Revitalização facial</option>
-                                <option value="">Hidratação facial</option>
-                                <option value="">Radiofrequência facial</option>
-                                <option value="">Skimbooster</option>
-                                <option value="">Preenchimento facial</option>
-                                <option value="">Toxina botulínica ( Botox )</option>
-                                <option value="">Drenagem linfática facial</option>
-                                <option value="">Drenagem linfática corporal</option>
-                                <option value="">Massagem relaxante</option>
-                                <option value="">Massagem modeladora</option>
-                                <option value="">Massagem detox</option>
-                                <option value="">Secagem de vasinhos</option>
-                                <option value="">Ventosaterapia</option>
-                                <option value="">Carboxiterapia</option>
-                                <option value="">Bambuterapia</option>
-                                <option value="">Endermologia</option>
-                                <option value="">Enzima lipolitica</option>
-                                <option value="">Corrente aussie</option>
-                                <option value="">Criolipolise</option>
-                                <option value="">Banho de lua</option>
-                                <option value="">Pump up</option>
-                                <option value="">Enzima intramuscular</option>
-                                <option value="">Microagulhamento corporal</option>
-                                <option value="">Radiofrequência corporal</option>
-                                <option value="">Pé e mão</option>
+                                <option value="Limpeza de pele">Limpeza de pele</option>
+                                <option value="Peeling de diamante">Peeling de diamante</option>
+                                <option value="Peeling químico">Peeling químico</option>
+                                <option value="Microagulhamento facial">Microagulhamento facial</option>
+                                <option value="Revitalização facial">Revitalização facial</option>
+                                <option value="Hidratação facial">Hidratação facial</option>
+                                <option value="Radiofrequência facial">Radiofrequência facial</option>
+                                <option value="Skimbooster">Skimbooster</option>
+                                <option value="Preenchimento facial">Preenchimento facial</option>
+                                <option value="Toxina botulínica ( Botox )">Toxina botulínica ( Botox )</option>
+                                <option value="Drenagem linfática facial">Drenagem linfática facial</option>
+                                <option value="Drenagem linfática corporal">Drenagem linfática corporal</option>
+                                <option value="Massagem relaxante">Massagem relaxante</option>
+                                <option value="Massagem modeladora">Massagem modeladora</option>
+                                <option value="Massagem detox">Massagem detox</option>
+                                <option value="Secagem de vasinhos">Secagem de vasinhos</option>
+                                <option value="Ventosaterapia">Ventosaterapia</option>
+                                <option value="Carboxiterapia">Carboxiterapia</option>
+                                <option value="Bambuterapia">Bambuterapia</option>
+                                <option value="Endermologia">Endermologia</option>
+                                <option value="Enzima lipolitica">Enzima lipolitica</option>
+                                <option value="Corrente aussie">Corrente aussie</option>
+                                <option value="Criolipolise">Criolipolise</option>
+                                <option value="Banho de lua">Banho de lua</option>
+                                <option value="Pump up">Pump up</option>
+                                <option value="Enzima intramuscular">Enzima intramuscular</option>
+                                <option value="Microagulhamento corporal">Microagulhamento corporal</option>
+                                <option value="Radiofrequência corporal">Radiofrequência corporal</option>
+                                <option value="Pé e mão">Pé e mão</option>
                             </select>
 
-                            <button type="submit" class="site-btn">Enviar</button>
+                            <button type="button" id="agendar" class="site-btn">Enviar</button>
                         </form>
                     </div>
                 </div>
@@ -610,6 +610,7 @@
     <script src="./js/jquery.slicknav.js"></script>
     <script src="./js/owl.carousel.min.js"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/compartilhar-whatsapp.js"></script>
 
     <script>
         $(document).on('click','.map-link',function() {
