@@ -91,3 +91,19 @@
 .flaticon-048-beauty:before { content: "\f12f"; }
 .flaticon-049-abdominoplasty:before { content: "\f130"; }
 .flaticon-050-belly:before { content: "\f131"; }
+
+.svg-pemao {
+  display: inline-block;
+	height: 72px;
+	width: 72px;
+	background: rgba(255, 255, 255, 0.1);
+	font-size: 18px;
+	color: #13a2b7;
+	line-height: 50px;
+	text-align: center;
+	margin-right: 6px;
+}
+.svg-pemao:hover {
+	cursor: pointer;
+	fill:#13a2b7;
+}
