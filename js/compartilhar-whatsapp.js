@@ -6,9 +6,7 @@ function whatsApp(Nome,Numero,Dia,Servico)
     texto=texto.replace('#NUMERO#',Numero);
     texto=texto.replace('#DIA#',Dia);
     texto=texto.replace('#SERVICO#',Servico);
-    //    var telefone="5511974316721";
-    // 
-    var telefone="5511949389623";
+    var telefone="5511974316721";
     if($.isMobile)
     {
         endereco="whatsapp://send?phone="+telefone+"&text="+texto
@@ -18,18 +16,8 @@ function whatsApp(Nome,Numero,Dia,Servico)
         endereco="https://api.whatsapp.com/send?phone="+telefone+"&text="+texto
     }
     console.log("Enviando msg para: "+endereco);
-    $.ajax({
-        type : "GET",
-        dataType : "jsonp",
-        url : endereco,
-        success: function(data){
-            alert("Menssagem enviada com sucesso!");
-        },
-        error: function(ex){
-            alert("Não foi possível enviar a menssagem, tente novamente mais tarde!");
-        }
-   });
-   
+    
+    window.open(endereco);
 }
 
 $('#agendar').click( function() {
