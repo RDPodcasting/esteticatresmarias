@@ -19,7 +19,7 @@ function whatsApp(Nome,Numero,Dia,Servico)
     }
     console.log("Enviando msg para: "+endereco);
     $.ajax({
-        type : "POST",
+        type : "GET",
         dataType : "jsonp",
         url : endereco,
         success: function(data){
